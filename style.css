@@ -1,0 +1,65 @@
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #0a0a23;
+    --fcc-blue: #1b1b32;
+    --light-yellow: #fecc4c;
+    --dark-yellow: #feac32;
+    --light-pink: #ffadad;
+    --dark-red: #850000;
+    --light-green: #acd157;
+}
+
+body {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    /* Ensure the body takes at least the full height of the viewport */
+    margin: 0;
+    /* Remove default margin to prevent spacing around the body */
+}
+
+/* Style the game board grid */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+}
+
+header {
+    margin-top: 20px;
+    /* Adjust as needed to provide space above the header */
+}
+
+h1 {
+    color: #f5f6f7;
+    font-family: 'Salsa', cursive;
+}
+
+h2 {
+    color: #f5f6f7;
+    font-family: 'Salsa', cursive;
+}
+
+/* Style the individual cards */
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-size: cover;
+    /* Add this line to resize the background image */
+}
+
+#reset-button {
+    display: block;
+    margin-bottom: 20px;
+    /* Adjust as needed to provide space below the reset button */
+}
